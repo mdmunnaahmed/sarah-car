@@ -129,22 +129,10 @@
                       </ul>
                     </div>
                   </div>
-                  <form action="" class="review-form">
-                    <!-- <div class="form-group">
-                      <input type="text" class="form-control" required>
-                      <label for="">Name</label>
-                    </div>
+                  <form action="#0" class="review-form" id="reviewForm">
                     <div class="form-group">
-                      <input type="text" class="form-control" required>
-                      <label for="">Car Make</label>
-                    </div>
-                    <div class="form-group">
-                      <input type="text" class="form-control" required>
-                      <label for="">Car Model</label>
-                    </div> -->
-                    <div class="form-group">
-                      <textarea rows="4" class="form-control" required></textarea>
-                      <label for="">Feedback</label>
+                      <textarea rows="4" class="form-control" id="feedback" required></textarea>
+                      <label for="feedback">Feedback</label>
                     </div>
                     <fieldset>
                       <input type="radio" name="rating" id="rating-1" value="1">
@@ -153,12 +141,14 @@
                       <label for="rating-2">2 Stars</label>
                       <input type="radio" name="rating" id="rating-3" value="3">
                       <label for="rating-3">3 Stars</label>
-                      <input type="radio" name="rating" id="rating-4" value="4" checked>
+                      <input type="radio" name="rating" id="rating-4" value="4">
                       <label for="rating-4">4 Stars</label>
                       <input type="radio" name="rating" id="rating-5" value="5">
                       <label for="rating-5">5 Stars</label>
                     </fieldset>
-                    <button class="btn review-btn active">Make your Review</button>
+                    <button type="submit" class="btn review-btn active mb-3" onclick="validateForm()">Make your Review</button>
+                    <p id="errorMessage" class="error text-danger"></p>
+                    <p id="successMessage" class="success text-success"></p>
                   </form>
                 </div>
               </div>
@@ -220,6 +210,37 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
+
+  <!-- ... (your HTML code) ... -->
+  <script>
+    function validateForm(e) {
+
+      var feedback = document.getElementById('feedback').value;
+      var rating = document.querySelector('input[name="rating"]:checked');
+
+      var errorMessage = document.getElementById('errorMessage');
+      var successMessage = document.getElementById('successMessage');
+
+      // Reset styles
+      document.getElementById('feedback').classList.remove('error-outline');
+
+      // Check if feedback and rating are filled
+      if (feedback.trim() === '' || !rating) {
+        errorMessage.textContent = 'Please fill in both feedback and rating.';
+        successMessage.textContent = '';
+        if (feedback.trim() === '') {
+          document.getElementById('feedback').classList.add('error-outline');
+        }
+      } else {
+        document.getElementById('reviewForm').reset();
+        errorMessage.textContent = '';
+        successMessage.textContent = 'Review submitted successfully!';
+      }
+    }
+  </script>
+
+  <!-- ... (your HTML code) ... -->
+
 
 </body>
 

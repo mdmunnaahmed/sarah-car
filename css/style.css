@@ -3259,6 +3259,9 @@ tbody a {
   height: 48px;
   border-radius: 10px;
 }
+.review-form .form-group .form-control.error-outline {
+  border-color: red;
+}
 .review-form .form-group textarea {
   padding-top: 15px;
   border-radius: 10px;

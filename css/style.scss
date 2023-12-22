@@ -3254,6 +3254,9 @@ tbody a {
       height: 48px;
       border-radius: 10px;
     }
+    .form-control.error-outline {
+      border-color: red;
+    }
     textarea {
       padding-top: 15px;
       border-radius: 10px;
