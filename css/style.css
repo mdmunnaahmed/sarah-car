@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(bootstrap.min.css);
 @import url("https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css");
 body {
@@ -527,7 +528,7 @@ header .navbar {
 }
 @media (max-width: 767px) {
   .review-item {
-    background-color: #EEEEEE;
+    background-color: #eeeeee;
   }
 }
 @media (min-width: 768px) {
@@ -3179,6 +3180,124 @@ tbody a {
   width: 100px;
   font-size: 12px;
   padding: 0;
+}
+
+.review-wrapper {
+  background-color: white;
+  max-width: 1000px;
+  margin-inline: auto;
+  padding: 20px;
+  border-radius: 20px;
+}
+.review-wrapper .review-wrapper-inner {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+}
+.review-wrapper .review-form-wrapper {
+  max-width: 800px;
+  margin-inline: auto;
+  margin-top: 20px;
+}
+
+.review-top-info-show {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  background-color: white;
+}
+.review-top-info-show .right {
+  padding-left: 50px;
+}
+.review-top-info-show .car-info li {
+  padding: 5px 0;
+  gap: 10px;
+}
+
+.review-form {
+  margin-top: 10px;
+  padding: 40px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  background-color: white;
+}
+.review-form .review-btn {
+  background-color: #efefef;
+  height: 45px;
+  padding: 0;
+  line-height: 45px;
+  box-shadow: none !important;
+  border-radius: 10px;
+}
+.review-form .review-btn.active {
+  background-color: #249fd1;
+  color: white;
+}
+.review-form .review-btn:hover {
+  background-color: #e1e1e1;
+}
+.review-form .form-group {
+  position: relative;
+  margin-bottom: 24px;
+}
+.review-form .form-group label {
+  position: absolute;
+  left: 12px;
+  top: 16px;
+  background-color: white;
+  padding-inline: 6px;
+  transition: 0.3s;
+  font-size: 15px;
+  color: #778;
+}
+.review-form .form-group input {
+  height: 48px;
+  border-radius: 10px;
+}
+.review-form .form-group textarea {
+  padding-top: 15px;
+  border-radius: 10px;
+}
+.review-form .form-group input:valid ~ label,
+.review-form .form-group input:focus ~ label,
+.review-form .form-group textarea:valid ~ label,
+.review-form .form-group textarea:focus ~ label {
+  transform: translate(5px, -21px);
+  letter-spacing: 1px;
+  opacity: 1;
+}
+.review-form fieldset {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.review-form fieldset label {
+  width: 0;
+  overflow: hidden;
+}
+.review-form fieldset input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: var(--size);
+  height: var(--size);
+  text-align: center;
+  margin-inline: 2px;
+  cursor: pointer;
+}
+.review-form fieldset input::after {
+  content: "☆";
+  font-size: 30px;
+  color: #ffbf00;
+}
+.review-form fieldset input:is(:checked, :hover)::after, .review-form fieldset input:has(~ input:is(:checked, :hover))::after {
+  content: "★";
+}
+.review-form fieldset input:hover ~ input::after {
+  content: "☆";
 }
 
 /* mun css added end*//*# sourceMappingURL=style.css.map */

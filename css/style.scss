@@ -521,8 +521,8 @@ header .navbar {
   }
 }
 .review-item {
-  @media (max-width:767px) {
-    background-color: #EEEEEE;
+  @media (max-width: 767px) {
+    background-color: #eeeeee;
   }
   .review-item-inner {
     @media (min-width: 768px) {
@@ -3177,4 +3177,125 @@ tbody a {
     }
   }
 }
+
+// review form start
+.review-wrapper {
+  background-color: white;
+  max-width: 1000px;
+  margin-inline: auto;
+  padding: 20px;
+  border-radius: 20px;
+  .review-wrapper-inner {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .review-form-wrapper {
+    max-width: 800px;
+    margin-inline: auto;
+    margin-top: 20px;
+  }
+}
+.review-top-info-show {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  background-color: white;
+  .right {
+    padding-left: 50px;
+  }
+  .car-info {
+    li {
+      padding: 5px 0;
+      gap: 10px;
+    }
+  }
+}
+.review-form {
+  margin-top: 10px;
+  padding: 40px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  background-color: white;
+  .review-btn {
+    background-color: #efefef;
+    height: 45px;
+    padding: 0;
+    line-height: 45px;
+    box-shadow: none !important;
+    border-radius: 10px;
+    &.active {
+      background-color: #249fd1;
+      color: white;
+    }
+    &:hover {
+      background-color: #e1e1e1;
+    }
+  }
+  .form-group {
+    position: relative;
+    margin-bottom: 24px;
+    label {
+      position: absolute;
+      left: 12px;
+      top: 16px;
+      background-color: white;
+      padding-inline: 6px;
+      transition: 0.3s;
+      font-size: 15px;
+      color: #778;
+    }
+    input {
+      height: 48px;
+      border-radius: 10px;
+    }
+    textarea {
+      padding-top: 15px;
+      border-radius: 10px;
+    }
+    input:valid,
+    input:focus,
+    textarea:valid,
+    textarea:focus {
+      & ~ label {
+        transform: translate(5px, -21px);
+        letter-spacing: 1px;
+        opacity: 1;
+      }
+    }
+  }
+  fieldset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    label {
+      width: 0;
+      overflow: hidden;
+    }
+    input {
+      appearance: none;
+      width: var(--size);
+      height: var(--size);
+      text-align: center;
+      margin-inline: 2px;
+      cursor: pointer;
+      &::after {
+        content: "☆";
+        font-size: 30px;
+        color: #ffbf00;
+      }
+      &:is(:checked, :hover)::after,
+      &:has(~ input:is(:checked, :hover))::after {
+        content: "★";
+      }
+      &:hover ~ input::after {
+        content: "☆";
+      }
+    }
+  }
+}
+// review form end
 /* mun css added end*/

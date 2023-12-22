@@ -14,117 +14,9 @@
 </head>
 
 <body class="">
-  <!-- id proof modal start -->
-  <div class="modal fade" id="PhotoIDModal" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered" style="max-width: 600px">
-      <div class="modal-content border-0 rounded-3">
-        <div class="modal-body p-3">
-          <div class="upload-proof-modal">
-            <div class="top-content">
-              <div class="left">
-                <h5 class="sm-title">Photo ID</h5>
-                <p>Here we can add some content about what is acceptable for ID</p>
-                <h5 class="sm-title">Driving Licence</h5>
-                <h5 class="sm-title">Passport</h5>
-              </div>
-              <div class="right">
-                <span style="color: #eb2f2f" title="remove the photo"></span>
-                <div class="image-upload-wrapper">
-                  <input id="imageUpload" type="file" accept="image/jpeg, image/png, application/pdf">
-                  <img class="preview-image" src="./images/admin-car.png" alt="" id="previewImage">
-                  <button class="removePhoto bg-transparent" id="removePhoto"><img src="./images/x-circle2.svg" alt="close"></button>
-                </div>
-              </div>
-            </div>
-            <div class="action-wrapper">
-              <div>
-                <span class="mb-1 d-inline-block uploadedImageName" id="uploadedImageName">admin-car.png</span>
-                <label for="imageUpload" class="btn-msg"><span>UPLOAD NOW</span><img src="images/arrow-down-circle 3.svg" alt="text" class="img-fluid"></label>
-              </div>
-              <button class="btn btn-price shadow-none" data-bs-dismiss="modal">Done</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- id proof modal end -->
-
-  <!-- address proof modal start -->
-  <div class="modal fade" id="addressProofModal" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered" style="max-width: 600px">
-      <div class="modal-content border-0 rounded-3">
-        <div class="modal-body p-3">
-          <div class="upload-proof-modal">
-            <div class="top-content">
-              <div class="left">
-                <h5 class="sm-title">Address ID</h5>
-                <p>Here we can add some content about what is acceptable for Address ID</p>
-                <h5 class="sm-title">Acceptable Address:</h5>
-                <p>here is the explanation of acceptable addresses</p>
-              </div>
-              <div class="right">
-                <span style="color: #eb2f2f" title="remove the photo"></span>
-                <div class="image-upload-wrapper">
-                  <input id="imageUpload2" type="file" accept="image/jpeg, image/png, application/pdf">
-                  <img class="preview-image" src="./images/selling-img.png" alt="" id="previewImage2">
-                  <button class="removePhoto bg-transparent" id="removePhoto2"><img src="./images/x-circle2.svg" alt="close"></button>
-                </div>
-              </div>
-            </div>
-            <div class="action-wrapper">
-              <div>
-                <span class="mb-1 d-inline-block uploadedImageName" id="uploadedImageName2">admin-car.png</span>
-                <label for="imageUpload2" class="btn-msg"><span>UPLOAD NOW</span><img src="images/arrow-down-circle 3.svg" alt="text" class="img-fluid"></label>
-              </div>
-              <button class="btn btn-price shadow-none" data-bs-dismiss="modal">Done</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- address proof modal end -->
-
-  <!-- address proof modal start -->
-  <div class="modal fade" id="carPhotoModal" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered" style="max-width: 600px">
-      <div class="modal-content border-0 rounded-3">
-        <div class="modal-body p-3">
-          <div class="upload-proof-modal">
-            <div class="top-content">
-              <div class="left">
-                <h5 class="sm-title">Car Photos</h5>
-                <p>Here we can add some content about what is acceptable for Address ID</p>
-                <h5 class="sm-title">Acceptable Car Photos:</h5>
-                <p>here is the explanation of acceptable addresses</p>
-              </div>
-              <div class="right">
-                <span style="color: #eb2f2f" title="remove the photo"></span>
-                <div class="image-upload-wrapper">
-                  <input id="imageUpload3" type="file" multiple accept="image/jpeg, image/png, application/pdf">
-                  <div id="previewContainer">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="action-wrapper">
-              <div>
-                <span class="mb-1 d-inline-block uploadedImageName" id="uploadedImageName3"></span>
-                <label for="imageUpload3" class="btn-msg"><span>UPLOAD NOW</span><img src="images/arrow-down-circle 3.svg" alt="text" class="img-fluid"></label>
-              </div>
-              <button class="btn btn-price shadow-none" data-bs-dismiss="modal">Done</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- address proof modal end -->
-
-  <div class="wrapper quote-page">
+  <div class="wrapper">
     <header>
-      <nav class="navbar navbar-expand-xl">
+      <nav class="navbar navbar-expand-xl" id="navbar_top">
         <div class="container">
           <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="" class="img-fluid"></a>
           <div class="d-flex">
@@ -161,6 +53,7 @@
               <li class="nav-item d-xl-block d-none">
                 <a class=" btn-review" href="reviews.html"><span>REVIEWS</span>
                   <div class="stars">
+                    5.0
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                       <path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z" />
                     </svg>
@@ -187,7 +80,7 @@
               </li>
             </ul>
             <div class="price-form navbar-nav  show-nav align-items-center">
-              <div>
+              <div class="form">
                 <div class="input-group reg-input">
                   <div class="group-text" id="basic-addon1"><span>GB</span></div>
                   <input type="text" class="form-control" placeholder="Your Reg..." aria-label="Username" aria-describedby="basic-addon1">
@@ -211,128 +104,62 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-12">
-            <div class="quote-box roadmap-box">
-              <div class="top-bar">
-                <div class="car-box2"><img src="images/car-icon.svg" alt="" class="img-fluid">
-                </div>
-                <div class="road-map">
-                  <div class="text-center">
-                    <p class="d-md-none d-block link m-0">3 Add Payment/Documents</p>
-                  </div>
-                  <div class="p-bar">
-                    <div class="bar-labels">
-                      <div>Get Price</div>
-                      <div>Accept Quote</div>
-                      <div>Your Details</div>
-                      <div>Complete</div>
+            <div class="review-wrapper">
+              <div class="review-wrapper-inner">
+                <h2 class="main-review-title">Leave Your Feedback</h2>
+                <div class="review-form-wrapper">
+                  <div class="review-top-info-show">
+                    <div class="left">
+                      <img src="./images/car-1.png" alt="" class="presentation-img">
                     </div>
-                    <div class="dots">
-                      <div class="dot active">
-                        <div class="check">✓</div>
-                      </div>
-                      <div class="s-line active"></div>
-                      <div class="dot active">
-                        <div class="check">✓</div>
-                      </div>
-                      <div class="s-line active"></div>
-                      <div class="dot active">
-                        <div class="check">✓</div>
-                      </div>
-                      <div class="s-line active"></div>
-                      <div class="dot active">
-                        <div class="check">✓</div>
-                      </div>
+                    <div class="right">
+                      <ul class="car-info">
+                        <li class="d-flex align-items-center">
+                          <h6 class="title">Name:</h6>
+                          <span class="des">Mercedes</span>
+                        </li>
+                        <li class="d-flex align-items-center">
+                          <h6 class="title">Make:</h6>
+                          <span class="des">2008</span>
+                        </li>
+                        <li class="d-flex align-items-center">
+                          <h6 class="title">Model:</h6>
+                          <span class="des">Benz GLC</span>
+                        </li>
+                      </ul>
                     </div>
                   </div>
-                </div>
-                <div class="bus-box"><img src="images/bus-icon.svg" alt="" class="img-fluid">
-                </div>
-              </div>
-              <div class="bar-media photo-box">
-                <div class="bar-box">
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <p class="fw-bold">Documents</p>
-                      <p>By law we are required to obtain a copy of the photo It and
-                        proof of address of the person dealing with the disposal.
-                        You do not need to be the registered keeper to dispose of
-                        the vehicle but you must be authorised to deal with the
-                        vehicle on the registered keeper's behalf. </p>
-                      <p>You can either choose to upload the required documents now.
-                        Alternatively, you can let the recovery driver take a
-                        picture of these documents upon collection. </p>
+                  <form action="" class="review-form">
+                    <div class="form-group">
+                      <input type="text" class="form-control" required>
+                      <label for="">Name</label>
                     </div>
-                    <div class="col-lg-6">
-                      <div class="contact-box text-box p-0 bg-transparent border-0">
-                        <div class="contact-form">
-                          <div class="row">
-                            <div class="col-md-12">
-                              <div class="roadmap-box">
-                                <div class="d-flex justify-content-between">
-                                  <p class="fw-bold mb-1">Photo ID
-                                  </p>
-                                  <p>Acceptable ID<img src="images/i-icon.svg" alt="" class="img-fluid ms-2">
-                                  </p>
-                                </div>
-                                <div class="form-group">
-                                  <label for="name">Photo ID
-                                    (jpeg-PDF)</label>
-                                  <div class="position-relative">
-                                    <div>
-                                      <div>
-                                        <!-- <input type="file" id="file" /> -->
-                                        <span class="btn-msg PhotoIDModal" data-bs-toggle="modal" data-bs-target="#PhotoIDModal"><span>UPLOAD NOW</span><img src="images/arrow-down-circle 3.svg" alt="" class="img-fluid"></span>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                  <p class="fw-bold mb-1">Address
-                                    Proof
-                                  </p>
-                                  <p>Acceptable Proof<img src="images/i-icon.svg" alt="" class="img-fluid ms-2">
-                                  </p>
-                                </div>
-                                <div class="form-group">
-                                  <label for="name">Address Proof (jpeg-PDF)</label>
-                                  <div class="position-relative">
-                                    <div>
-                                      <div>
-                                        <!-- <input type="file" id="file" /> -->
-                                        <label class="btn-msg addressProofModal" data-bs-toggle="modal" data-bs-target="#addressProofModal"><span>UPLOAD NOW</span><img src="images/arrow-down-circle 3.svg" alt="" class="img-fluid"></label>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                  <p class="fw-bold mb-1">Car Photos
-                                  </p>
-                                </div>
-                                <div class="form-group">
-                                  <label for="name">Car Photos
-                                    Optional
-                                    (jpeg)</label>
-                                  <div class="position-relative">
-                                    <div>
-                                      <!-- <input type="file" id="file" /> -->
-                                      <label data-bs-target="#carPhotoModal" data-bs-toggle="modal" class="btn-msg carPhotoModal"><span>UPLOAD NOW</span><img src="images/arrow-down-circle 3.svg" alt="" class="img-fluid"></label>
-                                    </div>
-                                  </div>
-                                </div>
-                                <ul class="button-space d-flex btn-list">
-                                  <li><a class="btn-msg" href="#"><img src="images/arrow-down-circle4.svg" alt="" class="img-fluid"><span>BACK</span></a>
-                                  </li>
-                                  <li><a class="btn-msg" href="#"><span>SUBMIT
-                                      </span><img src="images/arrow-down-circle 3.svg" alt="" class="img-fluid"></a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" required>
+                      <label for="">Car Make</label>
                     </div>
-                  </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" required>
+                      <label for="">Car Model</label>
+                    </div>
+                    <div class="form-group">
+                      <textarea rows="4" class="form-control" required></textarea>
+                      <label for="">Feedback</label>
+                    </div>
+                    <fieldset>
+                      <input type="radio" name="rating" id="rating-1" value="1">
+                      <label for="rating-1">1 Star</label>
+                      <input type="radio" name="rating" id="rating-2" value="2">
+                      <label for="rating-2">2 Stars</label>
+                      <input type="radio" name="rating" id="rating-3" value="3">
+                      <label for="rating-3">3 Stars</label>
+                      <input type="radio" name="rating" id="rating-4" value="4" checked>
+                      <label for="rating-4">4 Stars</label>
+                      <input type="radio" name="rating" id="rating-5" value="5">
+                      <label for="rating-5">5 Stars</label>
+                    </fieldset>
+                    <button class="btn review-btn active">Make your Review</button>
+                  </form>
                 </div>
               </div>
             </div>
@@ -344,248 +171,54 @@
         <img src="images/mobile-lines.png" alt="" class="img-fluid d-md-none d-block">
       </div>
     </section>
-
-    <section class="review-sec review-sec2">
+    <footer>
       <div class="container">
+        <a href="#" class="call-link d-md-none d-block"><img src="images/blue-call.svg" alt="" class="img-fluid">0330 159
+          1588</a>
         <div class="row">
-          <div class="col-md-2 d-md-block d-none">
-            <img src="images/trust-2.png" alt="" class="img-fluid">
-          </div>
-          <div class="col-md-10 position-relative">
-            <div class="trust-pilot">
-              <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="review-box">
-                      <div class="d-flex align-items-center justify-content-between">
-                        <img src="images/slider-review.svg" alt="" class="img-fluid">
-                        <div>
-                          <span>1 day ago</span>
-                        </div>
-                      </div>
-                      <h6>Easy to use and money was transferr...</h6>
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Sequi odio
-                        officia,
-                        aliquam rerum aliquid alias deleniti tenetur repellat nulla
-                        eum dolore
-                        harum
-                        amet delectus beatae inventore ullam quisquam voluptatibus
-                        voluptatem!
-                      </p>
-                      <span>Wayne</span>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="review-box">
-                      <div class="d-flex align-items-center justify-content-between">
-                        <img src="images/slider-review.svg" alt="" class="img-fluid">
-                        <div>
-                          <span>1 day ago</span>
-                        </div>
-                      </div>
-                      <h6>Easy to use and money was transferr...</h6>
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Sequi odio
-                        officia,
-                        aliquam rerum aliquid alias deleniti tenetur repellat nulla
-                        eum dolore
-                        harum
-                        amet delectus beatae inventore ullam quisquam voluptatibus
-                        voluptatem!
-                      </p>
-                      <span>Wayne</span>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="review-box">
-                      <div class="d-flex align-items-center justify-content-between">
-                        <img src="images/slider-review.svg" alt="" class="img-fluid">
-                        <div>
-                          <span>1 day ago</span>
-                        </div>
-                      </div>
-                      <h6>Easy to use and money was transferr...</h6>
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Sequi odio
-                        officia,
-                        aliquam rerum aliquid alias deleniti tenetur repellat nulla
-                        eum dolore
-                        harum
-                        amet delectus beatae inventore ullam quisquam voluptatibus
-                        voluptatem!
-                      </p>
-                      <span>Wayne</span>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="review-box">
-                      <div class="d-flex align-items-center justify-content-between">
-                        <img src="images/slider-review.svg" alt="" class="img-fluid">
-                        <div>
-                          <span>1 day ago</span>
-                        </div>
-                      </div>
-                      <h6>Easy to use and money was transferr...</h6>
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Sequi odio
-                        officia,
-                        aliquam rerum aliquid alias deleniti tenetur repellat nulla
-                        eum dolore
-                        harum
-                        amet delectus beatae inventore ullam quisquam voluptatibus
-                        voluptatem!
-                      </p>
-                      <span>Wayne</span>
-                    </div>
-                  </div>
-                </div>
-
+          <div class="col-lg-3 col-md-5">
+            <div class="social-box">
+              <div class="fotter-logo">
+                <img src="images/logo.svg" alt="" class="img-fluid">
               </div>
-              <p><a href="#">Showing our latest reviews</a> </p>
+              <ul class="socail-list">
+                <li><a href="#"><img src="images/twiter.svg" alt="" class="img-fluid"></a></li>
+                <li><a href="#"><img src="images/instagram.svg" alt="" class="img-fluid"></a></li>
+                <li><a href="#"><img src="images/facebook.svg" alt="" class="img-fluid"></a></li>
+              </ul>
             </div>
-            <div class="swiper-button-next"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <circle class="arrow-slider-circle" cx="12" cy="12" r="11.5" fill="none" stroke="#8C8C8C"></circle>
-                <path class="arrow-slider-shape" fill="#8C8C8C"
-                  d="M10.5088835 12l3.3080582-3.02451041c.2440777-.22315674.2440777-.5849653 0-.80812204-.2440776-.22315673-.6398058-.22315673-.8838834 0L9.18305826 11.595939c-.24407768.2231567-.24407768.5849653 0 .808122l3.75000004 3.4285714c.2440776.2231568.6398058.2231568.8838834 0 .2440777-.2231567.2440777-.5849653 0-.808122L10.5088835 12z">
-                </path>
-              </svg></div>
-            <div class="swiper-button-prev"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <circle class="arrow-slider-circle" cx="12" cy="12" r="11.5" fill="none" stroke="#8C8C8C"></circle>
-                <path class="arrow-slider-shape" fill="#8C8C8C"
-                  d="M10.5088835 12l3.3080582-3.02451041c.2440777-.22315674.2440777-.5849653 0-.80812204-.2440776-.22315673-.6398058-.22315673-.8838834 0L9.18305826 11.595939c-.24407768.2231567-.24407768.5849653 0 .808122l3.75000004 3.4285714c.2440776.2231568.6398058.2231568.8838834 0 .2440777-.2231567.2440777-.5849653 0-.808122L10.5088835 12z">
-                </path>
-              </svg></div>
-
+            <a href="#" class="call-link d-md-block d-none"><img src="images/blue-call.svg" alt="" class="img-fluid">0330 159
+              1588</a>
+          </div>
+          <div class="col-lg-4 col-md-5">
+            <ul class="footer-links">
+              <li><a href="#">ULEZ car scrappage scheme</a></li>
+              <li><a href="#">Website terms and conditions</a></li>
+              <li><a href="#"> Cookie policy </a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Sitemap</a></li>
+            </ul>
           </div>
         </div>
       </div>
-    </section>
+      <div class="bottom-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p>© Remove My Car Ltd. All Rights Reserved. Company number registered in England and Wales:
+                7978223 - VAT number: 135 2393 25</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </footer>
   </div>
-  
+
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <script>
-    $(document).ready(function () {
-      $("#imageUpload").change(function () {
-        var input = this
-        if (input.files && input.files[0]) {
-          var reader = new FileReader();
-          reader.onload = function (e) {
-            $("#previewImage").attr('src', e.target.result);
-            $("#uploadedImageName").text(input.files[0].name);
-            $("#previewImage, #removePhoto, #uploadedImageName").removeClass('d-none');
-            $("#previewImage, #removePhoto, #uploadedImageName").addClass('d-block');
-          };
-          reader.readAsDataURL(input.files[0]);
-        }
-      });
-
-      $("#imageUpload2").change(function () {
-        var input = this
-        if (input.files && input.files[0]) {
-          var reader = new FileReader();
-          reader.onload = function (e) {
-            $("#previewImage2").attr('src', e.target.result);
-            $("#uploadedImageName2").text(input.files[0].name);
-            $("#previewImage2, #removePhoto2, #uploadedImageName2").removeClass('d-none');
-            $("#previewImage2, #removePhoto2, #uploadedImageName2").addClass('d-block');
-          };
-          reader.readAsDataURL(input.files[0]);
-        }
-      });
-
-      document.getElementById('imageUpload3').addEventListener('change', function (e) {
-        var input = e.target;
-        if (input.files && input.files.length > 0) {
-          for (var i = 0; i < input.files.length; i++) {
-            (function (index) {
-              var reader = new FileReader();
-              reader.onload = function (e) {
-                var imageContainer = $('<div class="image-container"><span class="makePrimary">make primary</span></div>');
-                var fileName = input.files[index].name; // Use the captured index
-                var image = $('<img src="' + e.target.result + '" class="preview-image" alt="Image Preview">');
-                image.attr('data-name', fileName); // Set data-name attribute
-                imageContainer.append(image);
-                imageContainer.append('<span class="delete-icon"><img src="./images/x-circle2.svg" alt="close"></span>');
-                $("#previewContainer").append(imageContainer);
-                // var rotateIcon = document.createElement('span');
-                // rotateIcon.className = 'rotate-icon';
-                // rotateIcon.innerHTML = '↻';
-                // rotateIcon.onclick = function () {
-                //   rotateImage(image);
-                // };
-                imageContainer.append(rotateIcon);
-              };
-              reader.readAsDataURL(input.files[index]);
-            })(i);
-          }
-          displayFileName(input.files);
-        }
-        $("#previewImage3, #removePhoto3, #uploadedImageName3").removeClass('d-none');
-        $("#previewImage3, #removePhoto3, #uploadedImageName3").addClass('d-block');
-      });
-
-      // function rotateImage(image) {
-      //   var canvas = document.createElement('canvas');
-      //   var ctx = canvas.getContext('2d');
-
-      //   canvas.width = image.height;
-      //   canvas.height = image.width;
-
-      //   ctx.translate(canvas.width / 2, canvas.height / 2);
-      //   ctx.rotate((90 * Math.PI) / 180);
-      //   ctx.drawImage(image, -image.width / 2, -image.height / 2);
-
-      //   image.src = canvas.toDataURL('image/png');
-      // }
-
-
-      function displayFileName(files) {
-        var fileNames = Array.from(files).map(file => file.name + '<br>');
-        $("#uploadedImageName3").html(fileNames);
-      }
-
-      $(".removePhoto").click(function () {
-        $(".imageUpload").val('');
-        $("#previewImage").attr('src', '#');
-        $("#previewImage2").attr('src', '#');
-        $("#previewContainer .preview-image").remove();
-        $(".uploadedImageName").text('');
-        $(".previewImage, .removePhoto, .uploadedImageName").addClass('d-none');
-      });
-
-      // Use event delegation to handle delete event
-      $("#previewContainer").on('click', '.delete-icon', function () {
-        $(this).closest('.image-container').remove();
-        updateImageNames();
-      });
-      function updateImageNames() {
-        var fileNames = [];
-        $(".preview-image").each(function () {
-          var fileName = $(this).attr('data-name');
-          if (fileName) {
-            fileNames.push(fileName);
-          }
-        });
-        $("#uploadedImageName3").html(fileNames.join('<br>'));
-      }
-      $('#previewContainer').on('click', '.makePrimary', function (e) {
-        $('.makePrimary').removeClass('active')
-        $(this).parent('div').siblings('div').children('img').removeClass('isPrimary')
-        $(this).parent('div').siblings('div').children('.makePrimary').text('make primary')
-
-        $(this).siblings('img').toggleClass('isPrimary')
-        $(this).text('primary')
-        $(this).addClass('active')
-      })
-    });
-
-
-  </script>
-
   <script src="js/main.js"></script>
 
 </body>
