@@ -3229,6 +3229,9 @@ tbody a {
     &.active {
       background-color: #249fd1;
       color: white;
+      &:hover {
+        background-color: #14a6e0;
+      }
     }
     &:hover {
       background-color: #e1e1e1;
@@ -3284,7 +3287,7 @@ tbody a {
       cursor: pointer;
       &::after {
         content: "☆";
-        font-size: 30px;
+        font-size: 36px;
         color: #ffbf00;
       }
       &:is(:checked, :hover)::after,

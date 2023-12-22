@@ -3235,6 +3235,9 @@ tbody a {
   background-color: #249fd1;
   color: white;
 }
+.review-form .review-btn.active:hover {
+  background-color: #14a6e0;
+}
 .review-form .review-btn:hover {
   background-color: #e1e1e1;
 }
@@ -3290,7 +3293,7 @@ tbody a {
 }
 .review-form fieldset input::after {
   content: "☆";
-  font-size: 30px;
+  font-size: 36px;
   color: #ffbf00;
 }
 .review-form fieldset input:is(:checked, :hover)::after, .review-form fieldset input:has(~ input:is(:checked, :hover))::after {
