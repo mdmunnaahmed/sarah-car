@@ -80,26 +80,31 @@
               </li>
             </ul>
             <div class="price-form navbar-nav  show-nav align-items-center">
-              <div class="form">
-                <div class="input-group reg-input">
-                  <div class="group-text" id="basic-addon1"><span>GB</span></div>
-                  <input type="text" class="form-control" placeholder="Your Reg..." aria-label="Username" aria-describedby="basic-addon1">
+              <form class="form getPriceForm" action="#0" onsubmit="getPriceForm(this)">
+                <div class="input-group flex-column w-auto">
+                  <div class="input-group reg-input">
+                    <div class="group-text" id="basic-addon1"><span>GB</span></div>
+                    <input id="registrationNumber" type="text" class="form-control registrationNumber" placeholder="Your Reg..." aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
                 </div>
-                <div class="input-group loaction-input">
-                  <div class="input-group-text " id="basic-addon1"><img src="images/location-icon.svg" alt="" class="img-fluid"></div>
-                  <input type="text" class="form-control" placeholder="Your Postcode..." aria-label="Your Postcode..." aria-describedby="basic-addon1">
+                <div class="input-group flex-column w-auto">
+                  <div class="input-group loaction-input">
+                    <div class="input-group-text " id="basic-addon1"><img src="images/location-icon.svg" alt="" class="img-fluid"></div>
+                    <input id="postCode" type="text" class="form-control postCode" placeholder="Your Postcode..." aria-label="Your Postcode..." aria-describedby="basic-addon1">
+                  </div>
                 </div>
                 <div class="">
-                  <a href="#" class="btn btn-price">GET PRICE</a>
+                  <button type="submit" class="btn btn-price">GET PRICE</button>
                 </div>
                 <a href="#" class="call-link"><img src="images/blue-call.svg" alt="" class="img-fluid">0330 159
                   1588</a>
-              </div>
+              </form>
             </div>
           </div>
         </div>
       </nav>
     </header>
+
     <section class="hero-bg">
       <div class="container">
         <div class="row">
@@ -112,22 +117,26 @@
               <div class="hero-card">
                 <h2>See How Much Your Car Is Worth</h2>
                 <div class="price-form">
-                  <div class="form">
-                    <div class="input-group reg-input">
-                      <div class="group-text" id="basic-addon1"><img src="images/stars.svg" alt="" class="img-fluid"><br><span>GB</span></div>
-                      <input type="text" class="form-control" placeholder="Your Reg..." aria-label="Username" aria-describedby="basic-addon1">
+                  <form class="form getPriceForm align-items-start" onsubmit="getPriceForm(this)">
+                    <div class="input-group flex-column w-100">
+                      <div class="input-group reg-input">
+                        <div class="group-text" id="basic-addon1"><img src="images/stars.svg" alt="" class="img-fluid"><br><span>GB</span></div>
+                        <input type="text" class="form-control registrationNumber" placeholder="Your Reg..." aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
                     </div>
-                    <div class="input-group loaction-input">
-                      <div class="input-group-text " id="basic-addon1"><img src="images/location-icon.svg" alt="" class="img-fluid"></div>
-                      <input type="text" class="form-control" placeholder="Your Postcode..." aria-label="Your Postcode..." aria-describedby="basic-addon1">
+                    <div class="input-group flex-column w-100">
+                      <div class="input-group loaction-input">
+                        <div class="input-group-text " id="basic-addon1"><img src="images/location-icon.svg" alt="" class="img-fluid"></div>
+                        <input type="text" class="form-control postCode" placeholder="Your Postcode..." aria-label="Your Postcode..." aria-describedby="basic-addon1">
+                      </div>
                     </div>
                     <p class="d-block vehicle-text d-md-none">Join the thousands who have chosen
                       Remove My Car to
                       scrap
                       their vehicle.</p>
                     <div class="">
-                      <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-price">GET PRICE<br><span>INSTANT
-                          VALUATION</span></a>
+                      <button type="submit" class="btn btn-price">GET PRICE<br><span>INSTANT
+                          VALUATION</span></button>
                     </div>
                     <div class="price-boxes d-block d-md-none">
                       <div class="price-box">
@@ -140,7 +149,7 @@
                         <p>No charges, No hidden costs, No hidden surprises</p>
                       </div>
                     </div>
-                  </div>
+                  </form>
                 </div>
                 <div class="star-list d-md-flex d-none">
                   <div>
@@ -761,6 +770,59 @@
       },
     });
   </script>
+
+
+  <script>
+    function getPriceForm(form) {
+      var registrationNumber = form.querySelector('.registrationNumber');
+      var postCode = form.querySelector('.postCode');
+
+      registrationNumber.classList.remove('border-danger');
+      registrationNumber.classList.remove('border');
+      postCode.classList.remove('border-danger');
+      postCode.classList.remove('border');
+
+      if (form.querySelector('.errorMsg')) {
+        form.querySelector('.getPriceForm .errorMsg').remove()
+        form.querySelector('.getPriceForm .errorMsg').remove()
+      }
+
+      // Check if reg, postcde are filled
+      if (registrationNumber.value.trim() === '' || postCode.value.trim() === '') {
+        if (registrationNumber.value.trim() === '') {
+          registrationNumber.classList.add('border-danger');
+          registrationNumber.classList.add('border');
+
+          var error1 = document.createElement('small')
+          error1.classList.add('text-danger')
+          error1.classList.add('ms-1')
+          error1.classList.add('errorMsg')
+          error1.style.fontSize = '14px'
+          error1.innerHTML = 'please enter your car registration';
+          var regInputWrapper = form.querySelector('.reg-input')
+          regInputWrapper.parentNode.insertBefore(error1, regInputWrapper.nextSibling);
+        }
+        if (postCode.value.trim() === '') {
+          postCode.classList.add('border-danger');
+          postCode.classList.add('border');
+
+          var error2 = document.createElement('small')
+          error2.classList.add('text-danger')
+          error2.classList.add('ms-3')
+          error2.classList.add('errorMsg')
+          error2.style.fontSize = '14px'
+          error2.innerHTML = 'please enter your postcode';
+          var postInputWrapper = form.querySelector('.loaction-input')
+          postInputWrapper.parentNode.insertBefore(error2, postInputWrapper.nextSibling);
+
+          // form.querySelector('.loaction-input').append(error2)
+        }
+      } else {
+        form.getElementsByClassName('getPriceForm').reset();
+      }
+    }
+  </script>
+
 </body>
 
 </html>
