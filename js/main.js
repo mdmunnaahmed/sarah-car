@@ -32,3 +32,31 @@ $("#no").on("click", function () {
   $("#yes").removeClass("activeButton");
   choice = 0;
 });
+
+// Detect Screen Size
+let screenSize = window.innerWidth;
+window.addEventListener("resize", function (e) {
+  screenSize = window.innerWidth;
+});
+
+if (screenSize < 1199) {
+  // Menu Click Event
+  let trigger = $(".navbar-toggler");
+  let dropdown = $("#navbarNav");
+  if (trigger || dropdown) {
+    trigger.each(function () {
+      $(this).on("click", function (e) {
+        e.stopPropagation();
+      });
+    });
+    dropdown.each(function () {
+      $(this).on("click", function (e) {
+        e.stopPropagation();
+      });
+    });
+    $(document).on("click", function () {
+      dropdown.removeClass("show");
+      trigger.removeClass("collapsed");
+    });
+  }
+}

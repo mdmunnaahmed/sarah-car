@@ -3395,7 +3395,7 @@ tbody a {
 }
 @media (max-width: 1365px) {
   .text-box div.customer-box {
-    height: 400px !important;
+    max-height: 400px !important;
   }
   .swiper-pagination {
     margin: -60px 23px 0px 64px !important;
@@ -3421,8 +3421,12 @@ tbody a {
 @media (max-width: 1199px) {
   .btn-review22,
   .btn-msg {
-    background-color: transparent !important;
+    background: transparent !important;
     color: inherit !important;
   }
 }
+.contact-page {
+  overflow: auto !important;
+}
+
 /* mun css added end*/
