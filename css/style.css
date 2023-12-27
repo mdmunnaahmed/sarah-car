@@ -283,7 +283,7 @@ header .navbar-nav .nav-link {
   height: 448px;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .price-form .reg-input {
@@ -567,7 +567,6 @@ header .navbar {
     background-color: #fff;
   }
 }
-
 .right-side {
   padding: 38px 40px 25px;
 }
@@ -620,7 +619,7 @@ header .navbar {
 .reivew-img img {
   height: 427px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .swiper-pagination-bullet-active {
@@ -3061,11 +3060,13 @@ tbody a {
   background-color: #eeeeee;
   padding: 16px;
 }
+
 .upload-proof-modal #previewContainer {
   display: flex;
   flex-wrap: wrap;
   gap: 3px;
 }
+
 .upload-proof-modal #previewContainer > * {
   width: 48%;
   height: 100px;
@@ -3073,13 +3074,15 @@ tbody a {
   flex-grow: 1;
   max-width: auto;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border: 3px solid white;
 }
+
 .upload-proof-modal #previewContainer .image-container {
   position: relative;
   padding: 2px;
 }
+
 .upload-proof-modal #previewContainer .image-container::before {
   position: absolute;
   content: "";
@@ -3089,10 +3092,12 @@ tbody a {
   left: 0;
   top: 0;
 }
+
 .upload-proof-modal #previewContainer .image-container:hover .makePrimary {
   visibility: visible;
   opacity: 1;
 }
+
 .upload-proof-modal #previewContainer .makePrimary {
   position: absolute;
   left: 50%;
@@ -3110,27 +3115,32 @@ tbody a {
   opacity: 0;
   transition: 0.3s;
 }
+
 .upload-proof-modal #previewContainer .makePrimary.active {
   opacity: 1;
   visibility: visible;
 }
+
 .upload-proof-modal #previewContainer .delete-icon {
   position: absolute;
   z-index: 1;
   right: 0;
   top: 0;
 }
+
 .upload-proof-modal .image-upload-wrapper {
   position: relative;
   max-width: 200px;
 }
+
 .upload-proof-modal .image-upload-wrapper .preview-image {
   max-height: 300px;
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
+
 .upload-proof-modal .removePhoto {
   border: none;
   outline: none;
@@ -3139,42 +3149,52 @@ tbody a {
   right: -10px;
   top: -10px;
 }
+
 .upload-proof-modal .top-content {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
+
 .upload-proof-modal .top-content .sm-title {
   margin-bottom: 10px;
 }
+
 .upload-proof-modal .top-content p {
   margin-bottom: 16px;
 }
+
 .upload-proof-modal .top-content .left {
   width: 55%;
   padding-right: 30px;
 }
+
 .upload-proof-modal .top-content .right {
   width: 40%;
 }
+
 .upload-proof-modal .action-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
+
 .upload-proof-modal .action-wrapper .btn-msg {
   height: 33px;
   width: 117px;
   display: flex;
   align-items: center;
 }
+
 .upload-proof-modal .action-wrapper .btn-msg span {
   font-size: 10px;
   padding: 0;
 }
+
 .upload-proof-modal .action-wrapper .btn-msg img {
   width: 15px;
 }
+
 .upload-proof-modal .action-wrapper .btn-price {
   height: 33px;
   width: 100px;
@@ -3189,11 +3209,13 @@ tbody a {
   padding: 20px;
   border-radius: 20px;
 }
+
 .review-wrapper .review-wrapper-inner {
   background-color: #f5f5f5;
   padding: 20px;
   border-radius: 10px;
 }
+
 .review-wrapper .review-form-wrapper {
   max-width: 800px;
   margin-inline: auto;
@@ -3208,9 +3230,11 @@ tbody a {
   border-radius: 15px;
   background-color: white;
 }
+
 .review-top-info-show .right {
   padding-left: 50px;
 }
+
 .review-top-info-show .car-info li {
   padding: 5px 0;
   gap: 10px;
@@ -3223,6 +3247,7 @@ tbody a {
   border-radius: 15px;
   background-color: white;
 }
+
 .review-form .review-btn {
   background-color: #efefef;
   height: 45px;
@@ -3231,20 +3256,25 @@ tbody a {
   box-shadow: none !important;
   border-radius: 10px;
 }
+
 .review-form .review-btn.active {
   background-color: #249fd1;
   color: white;
 }
+
 .review-form .review-btn.active:hover {
   background-color: #14a6e0;
 }
+
 .review-form .review-btn:hover {
   background-color: #e1e1e1;
 }
+
 .review-form .form-group {
   position: relative;
   margin-bottom: 24px;
 }
+
 .review-form .form-group label {
   position: absolute;
   left: 12px;
@@ -3255,17 +3285,21 @@ tbody a {
   font-size: 15px;
   color: #778;
 }
+
 .review-form .form-group input {
   height: 48px;
   border-radius: 10px;
 }
+
 .review-form .form-group .form-control.error-outline {
   border-color: red;
 }
+
 .review-form .form-group textarea {
   padding-top: 15px;
   border-radius: 10px;
 }
+
 .review-form .form-group input:valid ~ label,
 .review-form .form-group input:focus ~ label,
 .review-form .form-group textarea:valid ~ label,
@@ -3274,34 +3308,41 @@ tbody a {
   letter-spacing: 1px;
   opacity: 1;
 }
+
 .review-form fieldset {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
 }
+
 .review-form fieldset label {
   width: 0;
   overflow: hidden;
 }
+
 .review-form fieldset input {
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   width: var(--size);
   height: var(--size);
   text-align: center;
   margin-inline: 2px;
   cursor: pointer;
 }
+
 .review-form fieldset input::after {
   content: "☆";
   font-size: 36px;
   color: #ffbf00;
 }
-.review-form fieldset input:is(:checked, :hover)::after, .review-form fieldset input:has(~ input:is(:checked, :hover))::after {
+
+.review-form fieldset input:is(:checked, :hover)::after,
+.review-form fieldset input:has(~ input:is(:checked, :hover))::after {
   content: "★";
 }
+
 .review-form fieldset input:hover ~ input::after {
   content: "☆";
 }
@@ -3316,10 +3357,12 @@ tbody a {
   padding-top: 55px;
   margin-top: -44px;
 }
+
 .customer-review .swiper-slide-prev {
   transform: translateX(-80px);
   transition: 0.3s;
 }
+
 .customer-review .swiper-slide-next {
   transform: translateX(80px);
   transition: 0.3s;
@@ -3351,7 +3394,7 @@ tbody a {
   }
 }
 @media (max-width: 1365px) {
-  div.customer-box {
+  .text-box div.customer-box {
     height: 400px !important;
   }
   .swiper-pagination {
@@ -3362,6 +3405,24 @@ tbody a {
   div.swiper-pagination {
     margin: 0 !important;
     bottom: 20px !important;
+    position: absolute !important;
+    left: 0 !important;
+  }
+}
+@media (max-width: 575px) {
+  div.swiper-pagination {
+    margin: 0 !important;
+    bottom: 20px !important;
+    position: absolute !important;
+    left: 0 !important;
+    justify-content: center;
+  }
+}
+@media (max-width: 1199px) {
+  .btn-review22,
+  .btn-msg {
+    background-color: transparent !important;
+    color: inherit !important;
   }
 }
 /* mun css added end*/

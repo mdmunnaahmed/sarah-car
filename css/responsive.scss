@@ -349,7 +349,7 @@
   }
 
   .garige-img {
-    width: 100%;
+    /*width: 100%;*/
   }
 
   .hide-content {
@@ -1146,7 +1146,7 @@
   }
 
   .content-page .hero-bg {
-    padding: 123px 0px 61px;
+    /*padding: 123px 0px 61px;*/
   }
 
   .contact-box.fees-sec .image-holder {
@@ -1515,7 +1515,7 @@
     width: 106px;
     height: 106px;
     left: auto;
-    right: 0px;
+    right: -10px;
     top: 110px;
     text-align: center;
   }
@@ -1539,6 +1539,10 @@
 
   .word-space {
     margin-top: 38px;
+  }
+
+  .garige-img {
+    /*height: 100%;*/
   }
 
   .play-btn {
@@ -1894,46 +1898,6 @@
     height: 26px;
     background-size: 26px;
   }
-
-  .review-wrapper {
-    padding: 0;
-    background-color: transparent;
-    .main-review-title {
-      margin-bottom: 0px;
-    }
-    .review-form-wrapper {
-      margin-top: 10px;
-    }
-  }
-  .review-top-info-show {
-    padding: 15px;
-    .right {
-      padding-left: 10px;
-      flex-shrink: 0;
-    }
-  }
-
-  .review-top-info-show .car-info li {
-    padding: 0;
-    .title,
-    .des {
-      font-size: 15px;
-    }
-  }
-  .review-form {
-    padding: 15px;
-    .form-group {
-      margin-bottom: 15px;
-    }
-    fieldset {
-      margin-bottom: 10px;
-      input {
-        &::after {
-          font-size: 22px;
-        }
-      }
-    }
-  }
 }
 
 @media (max-width: 400px) {
@@ -2080,9 +2044,9 @@
     overflow: auto;
   }
 
-  /* .top-bar>* {
-          min-height: 110px;
-     } */
+  .top-bar > * {
+    min-height: 110px;
+  }
 
   .bar-labels,
   .dots {
@@ -2109,5 +2073,124 @@
     width: 26px;
     height: 26px;
     background-size: 26px;
+  }
+}
+
+@media (max-width: 767px) {
+  .customer-review {
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .customer-review .swiper-slide-prev {
+    transform: translateX(0px);
+    transition: 0.3s;
+  }
+
+  .customer-review .swiper-slide-next {
+    transform: translateX(0px);
+    transition: 0.3s;
+  }
+}
+
+@media (max-width: 767px) {
+  .customer-box {
+    border: none;
+    padding-bottom: 10px !important;
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .review-item {
+    background-color: #eeeeee;
+  }
+}
+
+@media (min-width: 768px) {
+  .review-item .review-item-inner {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .review-item .review-item-inner {
+    width: 100%;
+  }
+
+  .review-item .review-item-inner .reivew-img {
+    width: 45%;
+    height: 200px;
+  }
+
+  .review-item .review-item-inner .top-content {
+    width: 55%;
+    padding: 20px;
+    background-color: #fff;
+  }
+
+  .review-item .review-item-inner .top-content p span {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .review-item .right-side {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .review-item .right-side {
+    border: 10px solid #f6f6f6;
+    border-top: none;
+    border-bottom: none;
+    margin-top: 10px;
+    background-color: #fff;
+  }
+}
+.offer-tag h2 {
+  margin: 0 !important;
+}
+
+@media (max-width: 767px) {
+  .offer-tag {
+    right: 0 !important;
+  }
+}
+
+@media (max-width: 1365px) {
+  .text-box div.customer-box {
+    height: 400px !important;
+  }
+  .swiper-pagination {
+    margin: -60px 23px 0px 64px !important;
+  }
+}
+@media (max-width: 1200px) {
+  div.swiper-pagination {
+    margin: 0 !important;
+    bottom: 20px !important;
+    position: absolute !important;
+    left: 0 !important;
+  }
+}
+@media (max-width: 575px) {
+  div.swiper-pagination {
+    margin: 0 !important;
+    bottom: 20px !important;
+    position: absolute !important;
+    left: 0 !important;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1199px) {
+  .btn-review22,
+  .btn-msg {
+    background-color: transparent !important;
+    color: inherit !important;
   }
 }
