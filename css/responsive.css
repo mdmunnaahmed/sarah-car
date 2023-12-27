@@ -1188,7 +1188,7 @@
     width: 106px;
     height: 106px;
     left: auto;
-    right: -10px;
+    right: 0px;
     top: 110px;
     text-align: center;
   }
@@ -1207,9 +1207,6 @@
   }
   .word-space {
     margin-top: 38px;
-  }
-  .garige-img {
-    height: 100%;
   }
   .play-btn {
     width: 94px;
@@ -1677,4 +1674,4 @@
     height: 26px;
     background-size: 26px;
   }
-}/*# sourceMappingURL=responsive.css.map */
+}

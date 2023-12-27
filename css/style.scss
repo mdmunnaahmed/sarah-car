@@ -3304,4 +3304,63 @@ tbody a {
   }
 }
 // review form end
+.adress-text li h6 {
+  max-width: 140px;
+}
+
+// review css New for Overflow
+.customer-review {
+  margin-left: -80px;
+  padding-left: 80px;
+  padding-top: 55px;
+  margin-top: -44px;
+
+  .swiper-slide-prev {
+    transform: translateX(-80px);
+    transition: 0.3s;
+  }
+  .swiper-slide-next {
+    transform: translateX(80px);
+    transition: 0.3s;
+  }
+}
+@media (max-width: 767px) {
+  .customer-review {
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-top: 0;
+    margin-top: 0;
+    .swiper-slide-prev {
+      transform: translateX(-0px);
+      transition: 0.3s;
+    }
+    .swiper-slide-next {
+      transform: translateX(0px);
+      transition: 0.3s;
+    }
+  }
+}
+
+.offer-tag h2 {
+  margin: 0 !important;
+}
+@media (max-width: 767px) {
+  .offer-tag {
+    right: 0 !important;
+  }
+}
+@media (max-width: 1365px) {
+  div.customer-box {
+    height: 400px !important;
+  }
+  .swiper-pagination {
+    margin: -60px 23px 0px 64px !important;
+  }
+}
+@media (max-width:1200px) {
+  div.swiper-pagination {
+    margin: 0 !important;
+    bottom: 20px !important;
+  }
+}
 /* mun css added end*/
