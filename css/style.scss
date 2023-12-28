@@ -3377,13 +3377,21 @@ tbody a {
   }
 }
 @media (max-width: 1199px) {
-  .btn-review22,
-  .btn-msg {
+  #navbarNav .btn-review22,
+  #navbarNav .btn-msg {
     background: transparent !important;
     color: inherit !important;
   }
 }
 .contact-page {
   overflow: auto !important;
+}
+@media (max-width: 767px) {
+  .collect-box.box-size {
+    background-color: #fff;
+  }
+  .bar-box ul {
+    background-color: #fff;
+  }
 }
 /* mun css added end*/
