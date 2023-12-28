@@ -2650,17 +2650,6 @@ input[type=range].active::-webkit-slider-thumb {
   background: #ffc107 !important;
 }
 
-.btn-review {
-  flex-direction: column;
-  align-items: flex-start;
-  color: black !important;
-  background: none !important;
-  gap: 0.3rem;
-  width: -moz-max-content;
-  width: max-content;
-  margin-left: 1rem;
-}
-
 .btn-review .stars {
   display: flex;
   align-items: center;
