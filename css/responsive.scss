@@ -293,8 +293,7 @@
   }
 
   .navbar-brand img {
-    height: 52px;
-    width: 183px;
+    width: 200px;
     object-fit: cover;
   }
 
@@ -2005,10 +2004,6 @@
     font-size: 18px;
   }
 
-  .navbar-brand img {
-    width: 130px;
-  }
-
   .btn-call {
     width: 35px;
     height: 36px;
@@ -2184,7 +2179,6 @@
   }
 }
 
-
 @media (max-width: 767px) {
   .customer-review {
     margin-left: 0px;
@@ -2242,9 +2236,6 @@
     padding: 22px 14px !important;
   }
 }
-.contact-page {
-  overflow: auto !important;
-}
 @media (max-width: 767px) {
   .collect-box.box-size {
     background-color: #fff;
@@ -2252,4 +2243,25 @@
   .bar-box ul {
     background-color: #fff;
   }
+}
+
+.contact-box .contact-form .form-control {
+  background-color: #fff;
+}
+.contact-box ul li h6 span {
+  min-width: 150px;
+  max-width: unset;
+  width: unset;
+}
+
+@media (min-width:1400px) {
+  .navbar-brand img {
+    width: 250px; 
+  }
+}
+
+.contact-box .img-hodler {
+  margin-top: 0;
+  margin-bottom: 0;
+  transform: translateY(70px);
 }

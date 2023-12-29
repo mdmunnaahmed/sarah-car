@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url(bootstrap.min.css);
 @import url("https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css");
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700&display=swap");
 body {
   font-family: "League Spartan", sans-serif;
   letter-spacing: normal;
@@ -165,12 +165,12 @@ header .navbar-nav .nav-link {
 }
 
 .btn-review22 {
-  color: #FFF;
+  color: #fff;
   font-size: 16px;
   font-weight: 700;
   border-radius: 7px;
   margin-left: 10px;
-  background: #FFC224;
+  background: #ffc224;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -304,7 +304,7 @@ header .navbar-nav .nav-link {
 
 .price-form .reg-input {
   border: 2px solid #fff;
-  border-radius: 7px;
+  border-radius: 7px !important;
   max-width: 275px;
   width: 100%;
 }
@@ -783,6 +783,9 @@ header .navbar {
   font-weight: 700;
   line-height: normal;
   margin-left: 0px;
+  &:hover {
+    color: #269d64;
+  }
 }
 
 .opacity-0 {
@@ -1524,7 +1527,6 @@ header .loaction-input img {
   border-radius: 7px;
   background: #ebebeb;
   height: 32px;
-  border: none;
 }
 
 .contact-box label {
@@ -3340,5 +3342,8 @@ tbody a {
 .customer-review .swiper-slide-next {
   transform: translateX(80px);
   transition: 0.3s;
+}
+.contact-page {
+  padding-bottom: 40px;
 }
 /* mun css added end*/
